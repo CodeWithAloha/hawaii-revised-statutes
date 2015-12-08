@@ -1,0 +1,37 @@
+<%@ MASTERPAGE="/ISYS.LAYOUT" %>
+<!-- ISYS:DirBrowse:Header -->
+
+{SETFILEICON DEFAULT generic.gif}
+{SETFILEICON FOLDER folder.gif}
+{SETFILEICON TXT text.gif}
+{SETFILEICON HTM text.gif}
+{SETFILEICON HTML text.gif}
+{SETFILEICON ASP text.gif}
+{SETFILEICON PHP text.gif}
+{SETFILEICON PDF layout.gif}
+{SETFILEICON DOC layout.gif}
+{SETFILEICON WPD layout.gif}
+{SETFILEICON JPG image2.gif}
+{SETFILEICON GIF image2.gif}
+{SETFILEICON PNG image2.gif}
+{SETFILEICON TIF image2.gif}
+{SETFILEICON TIFF image2.gif}
+{SETFILEICON DLL binary.gif}
+{SETFILEICON EXE binary.gif}
+{SETFILEICON ZIP compressed.gif}
+
+<table cellpadding="2">
+  <tr>
+    <td><IMG SRC="/images/icons/back.gif"></td>
+    <td colspan="3"><A HREF="..">.. Parent Directory</A></td>
+  </tr>
+<!-- ISYS:DirBrowse:Line -->
+  <tr>
+    <td width="16"><IMG SRC="/images/icons/{FILEICON}"></td>
+    <td><A HREF="{FILENAME}">{FILENAME}</A></td>
+
+    <td align="right">{FILESIZE}</td>
+    <td align="right" nowrap>{FILEDATE dddd, mmmm dd, yyyy hh:nn AM/PM}</td>
+  </tr>
+<!-- ISYS:DirBrowse:Footer -->
+</table>
