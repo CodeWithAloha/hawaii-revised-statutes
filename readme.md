@@ -5,6 +5,9 @@ This repository contains a mirror of the Hawaii Revised Statutes from the [Hawai
 
 ## Changelog
 
+### [2016-01-04] 2016 update
+> Download new `hrs2016` directory and updated `hrscurrent` directory
+
 ### [2016-08-12] 2015 update
 > Download new `hrs2015` directory and updated `hrscurrent` directory
 
