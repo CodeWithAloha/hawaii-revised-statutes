@@ -10,8 +10,11 @@
 	{font-family:Courier;
 	panose-1:2 7 4 9 2 2 5 2 4 4;}
 @font-face
-	{font-family:Courier;
-	panose-1:2 7 4 9 2 2 5 2 4 4;}
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{margin:0in;
@@ -62,6 +65,7 @@ p.Constitution, li.Constitution, div.Constitution
 	font-family:"Courier New";}
 p.1Paragraph, li.1Paragraph, div.1Paragraph
 	{mso-style-name:"\(1\)Paragraph";
+	mso-style-link:"\(1\)Paragraph Char";
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:0in;
@@ -120,6 +124,7 @@ p.1ParagraphContd, li.1ParagraphContd, div.1ParagraphContd
 	font-family:"Courier New";}
 p.RegularParagraphs, li.RegularParagraphs, div.RegularParagraphs
 	{mso-style-name:"\#Regular Paragraphs";
+	mso-style-link:"\#Regular Paragraphs Char";
 	margin:0in;
 	margin-bottom:.0001pt;
 	font-size:12.0pt;
@@ -135,6 +140,14 @@ p.regularparagraphs0, li.regularparagraphs0, div.regularparagraphs0
 	margin:0in;
 	margin-bottom:.0001pt;
 	font-size:12.0pt;
+	font-family:"Courier New";}
+span.1ParagraphChar
+	{mso-style-name:"\(1\)Paragraph Char";
+	mso-style-link:"\(1\)Paragraph";
+	font-family:"Courier New";}
+span.RegularParagraphsChar
+	{mso-style-name:"\#Regular Paragraphs Char";
+	mso-style-link:"\#Regular Paragraphs";
 	font-family:"Courier New";}
  /* Page Definitions */
  @page WordSection1
@@ -187,19 +200,19 @@ significant issues, problems, and opportunities confronting the State, and
 formulating strategies and alternative courses of action in response to
 identified problems and opportunities by:</p>
 
-<p class=ASubparagraph>         (A)  Providing in-depth policy research,
+<p class=ASubparagraph>          (A)  Providing in-depth policy research,
 analysis, and recommendations on existing or potential areas of critical state
 concern;</p>
 
-<p class=ASubparagraph>         (B)  Examining and evaluating the effectiveness
-of state programs in implementing state policies and priorities;</p>
+<p class=ASubparagraph>          (B)  Examining and evaluating the
+effectiveness of state programs in implementing state policies and priorities;</p>
 
-<p class=ASubparagraph>         (C)  Monitoring through surveys, environmental
+<p class=ASubparagraph>          (C)  Monitoring through surveys, environmental
 scanning, and other techniques--current social, economic, and physical
 conditions and trends; and</p>
 
-<p class=ASubparagraph>         (D)  Developing, in collaboration with affected
-public or private agencies and organizations, implementation plans and
+<p class=ASubparagraph>          (D)  Developing, in collaboration with
+affected public or private agencies and organizations, implementation plans and
 schedules and, where appropriate, assisting in the mobilization of resources to
 meet identified needs;</p>
 
@@ -208,14 +221,14 @@ Facilitating coordinated and cooperative planning and policy development and
 implementation activities among state agencies and between the state, county,
 and federal governments, by:</p>
 
-<p class=ASubparagraph>         (A)  Reviewing, assessing, and coordinating, as
-necessary, major plans, programs, projects, and regulatory activities existing
-or proposed by state and county agencies;</p>
+<p class=ASubparagraph>          (A)  Reviewing, assessing, and coordinating,
+as necessary, major plans, programs, projects, and regulatory activities
+existing or proposed by state and county agencies;</p>
 
-<p class=ASubparagraph>         (B)  Formulating mechanisms to simplify,
+<p class=ASubparagraph>          (B)  Formulating mechanisms to simplify,
 streamline, or coordinate interagency development and regulatory processes; and</p>
 
-<p class=ASubparagraph>         (C)  Recognizing the presence of federal
+<p class=ASubparagraph>          (C)  Recognizing the presence of federal
 defense and security forces and agencies in the State as important state
 concerns;</p>
 
@@ -225,13 +238,13 @@ various forms of data and information, including geospatial data and
 information, to further effective state planning, policy analysis and
 development, and delivery of government services by:</p>
 
-<p class=ASubparagraph>         (A)  Collecting, assembling, organizing,
+<p class=ASubparagraph>          (A)  Collecting, assembling, organizing,
 evaluating, and classifying existing geospatial and non-geospatial data and
 performing necessary basic research, conversions, and integration to provide a
 common database for governmental planning and geospatial analyses by state
 agencies;</p>
 
-<p class=ASubparagraph>         (B)  Planning, coordinating, and maintaining a
+<p class=ASubparagraph>          (B)  Planning, coordinating, and maintaining a
 comprehensive, shared statewide planning and geographic information system and
 associated geospatial database.  The office shall be the lead agency
 responsible for coordinating the maintenance of the multi-agency, statewide
@@ -251,7 +264,7 @@ restricted, metadata describing existing geospatial data.  In cases where
 agencies provide restricted data, the office of planning shall ensure the
 security of that data; and</p>
 
-<p class=ASubparagraph>         (C)  Maintaining a centralized depository of
+<p class=ASubparagraph>          (C)  Maintaining a centralized depository of
 state and national planning references;</p>
 
 <p class=1Paragraph>     (5)  Land use planning.  Developing and presenting the
@@ -272,47 +285,96 @@ economic zone, coral reefs, and national marine sanctuaries;</p>
 <p class=1Paragraph>     (7)  Regional planning and studies.  Conducting plans
 and studies to determine:</p>
 
-<p class=ASubparagraph>         (A)  The capability of various regions within
+<p class=ASubparagraph>          (A)  The capability of various regions within
 the State to support projected increases in both resident populations and
 visitors;</p>
 
-<p class=ASubparagraph>         (B)  The potential physical, social, economic,
+<p class=ASubparagraph>          (B)  The potential physical, social, economic,
 and environmental impact on these regions resulting from increases in both
 resident populations and visitors;</p>
 
-<p class=ASubparagraph>         (C)  The maximum annual visitor carrying
+<p class=ASubparagraph>          (C)  The maximum annual visitor carrying
 capacity for the State by region, county, and island; and</p>
 
-<p class=ASubparagraph>         (D)  The appropriate guidance and management of
-selected regions and areas of statewide critical concern.</p>
+<p class=ASubparagraph>          (D)  The appropriate guidance and management
+of selected regions and areas of statewide critical concern.</p>
 
 <p class=1Paragraph>          The studies in subparagraphs (A) to (C) shall be
 conducted at appropriate intervals, but not less than once every five years;</p>
 
 <p class=1Paragraph>     (8)  Regional, national, and international planning. 
 Participating in and ensuring that state plans, policies, and objectives are
-consistent, to the extent practicable, with regional, national, and
-international planning efforts; and</p>
+consistent, to the extent practicable, with regional, national, and international
+planning efforts;</p>
 
 <p class=1Paragraph>     (9)  Climate adaptation planning.  Conducting plans
 and studies and preparing reports as follows:</p>
 
-<p class=ASubparagraph>         (A)  Develop, monitor, and evaluate strategic
+<p class=ASubparagraph>          (A)  Develop, monitor, and evaluate strategic
 climate adaptation plans and actionable policy recommendations for the State
 and counties addressing expected statewide climate change impacts identified
 under Act 286, Session Laws of Hawaii 2012, through the year 2050;</p>
 
-<p class=ASubparagraph>         (B)  Provide planning and policy guidance and
+<p class=ASubparagraph>          (B)  Provide planning and policy guidance and
 assistance to state and county agencies regarding climate change; and</p>
 
-<p class=ASubparagraph>         (C)  Publish its findings, recommendations, and
-progress reports on actions taken no later than December 31, 2017, and its
-annual report to the governor and the legislature thereafter. [L 1987, c 336,
-pt of §1; am L 1988, c 352, §5; am L 1990, c 160, §3; am L 1996, c 299, §1; am
-L 2000, c 253, §150; am L Sp 2005, c 12, §3; am L 2006, c 65, §2; am L Sp 2007,
-c 4, §3; am L 2014, c 83, §3]</p>
+<p class=ASubparagraph>          (C)  Publish its findings, recommendations,
+and progress reports on actions taken no later than December 31, 2017, and its
+annual report to the governor and the legislature thereafter; and</p>
+
+<p class=1Paragraph>    (10)  Smart growth and transit-oriented development. 
+Acting as the lead agency to coordinate and advance smart growth and
+transit-oriented development planning within the State as follows:</p>
+
+<p class=ASubparagraph>          (A)  Identify transit-oriented development
+opportunities shared between state and county agencies, including relevant
+initiatives such as the department of health's healthy Hawaii initiative and
+the Hawaii clean energy initiative;</p>
+
+<p class=ASubparagraph>          (B)  Refine the definition of &quot;transit-oriented
+development&quot; in the context of Hawaii, while recognizing the potential for
+smart growth development patterns in all locations;</p>
+
+<p class=ASubparagraph>          (C)  Clarify state goals for transit-oriented
+development and smart growth that support the principles of the Hawaii State
+Planning Act by preserving non-urbanized land, improving worker access to jobs,
+and reducing fuel consumption;</p>
+
+<p class=ASubparagraph>          (D)  Target transit-oriented development areas
+for significant increase in affordable housing and rental units;</p>
+
+<p class=ASubparagraph>          (E)  Conduct outreach to state agencies to
+help educate state employees about the ways they can support and benefit from
+transit-oriented development and the State's smart growth goals;</p>
+
+<p class=ASubparagraph>          (F)  Publicize coordinated state efforts that
+support smart growth, walkable neighborhoods, and transit-oriented development;</p>
+
+<p class=ASubparagraph>          (G)  Review state land use decision-making
+processes to identify ways to make transit-oriented development a higher
+priority and facilitate better and more proactive leadership in creating
+walkable communities and employment districts, even if transit will only be
+provided at a later date; and</p>
+
+<p class=ASubparagraph>          (H)  Approve all state agencies' development
+plans for parcels along the rail transit corridor.  For the purposes of this
+subparagraph, &quot;development plans&quot; means conceptual land use plans
+that identify the location and planned uses within a defined area. [L 1987, c
+336, pt of §1; am L 1988, c 352, §5; am L 1990, c 160, §3; am L 1996, c 299,
+§1; am L 2000, c 253, §150; am L Sp 2005, c 12, §3; am L 2006, c 65, §2; am L
+Sp 2007, c 4, §3; am L 2014, c 83, §3; am L 2016, c 130, §3]</p>
 
 <p class=RegularParagraphs>&nbsp;</p>
+
+<p class=XNotesHeading>Note</p>
+
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Comic Sans MS"'>&nbsp;</span></p>
+
+<p class=XNotes>  State goal for affordable rental housing units; special
+action team (terminated December 31, 2019); annual reports to 2017-2019
+legislature.  L 2016, c 127.</p>
+
+<p class=XNotesHeading>&nbsp;</p>
 
 <p class=XNotesHeading>Cross References</p>
 
